@@ -1,0 +1,71 @@
+{
+  "evidence_type": "Contributor summary of one physical printer setup; raw private logs intentionally excluded",
+  "tested_phone_model": "Galaxy S25 Ultra",
+  "android_app": "Brother Color Label Editor 2",
+  "app_version": "1.1.6",
+  "nominal_roll_width_mm": 50,
+  "direct_route_test": {
+    "result": "BOUNDED_DIRECT_ROUTE_PASS",
+    "undisturbed_screen_off_seconds": 120.0,
+    "device_queries_during_idle": 0,
+    "stages": [
+      {
+        "stage": "baseline",
+        "passed": true,
+        "status": {
+          "code": "0",
+          "print_state": "IDLE",
+          "print_job_stage": "READY FOR PRINT",
+          "print_job_error": "NONE"
+        }
+      },
+      {
+        "stage": "after-screen-wake",
+        "passed": true,
+        "status": {
+          "code": "0",
+          "print_state": "IDLE",
+          "print_job_stage": "READY FOR PRINT",
+          "print_job_error": "NONE"
+        }
+      },
+      {
+        "stage": "after-app-reopen",
+        "passed": true,
+        "status": {
+          "code": "0",
+          "print_state": "IDLE",
+          "print_job_stage": "READY FOR PRINT",
+          "print_job_error": "NONE"
+        }
+      }
+    ]
+  },
+  "print_jobs": [
+    {
+      "example": "app-template-photo",
+      "copies": 1,
+      "submit_taps": 1,
+      "device_stage": "SUCCESS",
+      "device_error": "NONE",
+      "owner_confirmed_output_and_cut": true,
+      "color_outcome": "Owner reported dark face and visible color difference"
+    },
+    {
+      "example": "externally-prepared-complete-artwork",
+      "copies": 1,
+      "submit_taps": 1,
+      "device_stage": "SUCCESS",
+      "device_error": "NONE",
+      "owner_confirmed_output_and_cut": true,
+      "color_outcome": "Owner preferred brightness and color; not a calibrated measurement"
+    }
+  ],
+  "firmware_installed": false,
+  "unverified": [
+    "overnight or battery-only deep standby",
+    "infrastructure-mode long-term reliability",
+    "other phones, versions, and roll widths",
+    "calibrated color and exact finished dimensions"
+  ]
+}
